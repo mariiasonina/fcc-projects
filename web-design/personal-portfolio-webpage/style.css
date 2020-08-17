@@ -52,7 +52,7 @@ a {
     box-sizing: border-box;
 }
 
-#projects {
+#projects-container {
     background-color: #8abdbb;
     width: inherit;
     display: grid;
@@ -86,8 +86,8 @@ h2 {
     text-align: center;
     font-size: 30px;
     margin: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 85px;
+    padding-bottom: 30px;
     width: inherit;
 }
 
@@ -188,7 +188,7 @@ p {
 }
 
 @media only screen and (max-device-width: 420px) {
-    #projects {
+    #projects-container {
         grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     }
 
@@ -212,7 +212,7 @@ p {
         height: 250px;
     }
 
-    #projects {
+    #projects-container {
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
 
@@ -227,7 +227,7 @@ p {
         height: 200px;
     }
 
-    #projects {
+    #projects-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 5px 0px;
     }
