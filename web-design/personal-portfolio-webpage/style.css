@@ -1,0 +1,238 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    width: calc(100vw-13px);
+}
+
+#navbar {
+    position: fixed;
+    background-color: #0a4545;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s linear;
+}
+
+.nav-link:hover {
+    text-shadow: white 0px 0px 10px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#phone {
+    color: black;
+}
+
+#welcome-section {
+    background-color: #e0f3ef;
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+    box-sizing: border-box;
+}
+
+#projects {
+    background-color: #8abdbb;
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-gap: 20px 0px;
+    justify-items: center;
+}
+
+.project-tile {
+    background-color: #0a4545;
+    box-shadow: 0 0 10px #0a4545;
+    transition: 0.5s linear;
+}
+
+.project-tile:hover {
+    background-color: #0a4545;
+    box-shadow: 0 0 20px #e0f3ef;
+    text-shadow: white 0px 0px 10px;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    background-color: #8abdbb;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: inherit;
+}
+
+img {
+    width: 370px;
+    height: 370px;
+}
+
+footer {
+    height: 70px;
+    width: inherit;
+    text-align: right;
+    color: white;
+    line-height: 70px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background-color: #0a4545;
+}
+
+figcaption {
+    background-color: #0a4545;
+    width: 370px;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+form {
+    background-color: #8abdbb;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+    width: inherit;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background-color: #0a4545;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 3px;
+    transition: 0.5s linear;
+}
+
+button:hover {
+    text-shadow: #0a4545 0px 0px 10px;
+    background-color: #e64747;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    transition: 0.3s linear;
+}
+
+.logo:hover {
+    padding-top: 7px;
+    margin-bottom: -7px;
+}
+
+#contacts {
+    background-color: #e0f3ef;
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100px;
+}
+
+.non-decoration {
+    color: black;
+}
+
+.non-decoration:hover {
+    text-shadow: #0a4545 0px 0px 10px;
+}
+
+p {
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-device-width: 420px) {
+    #projects {
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    figcaption {
+        width: 300px;
+    }
+
+    .contacts {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-device-width: 370px) {
+    img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #projects {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    figcaption {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-device-width: 250px) {
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #projects {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px 0px;
+    }
+
+    figcaption {
+        width: 200px;
+    }
+}
