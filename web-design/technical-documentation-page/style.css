@@ -131,7 +131,7 @@ pre {
     color: rgb(18, 167, 18);
 }
 
-@media screen and (max-width: 800px), screen and (max-device-width: 800px) {
+@media screen and (max-width: 600px), screen and (max-device-width: 600px) {
     #main-doc {
         display: flex;
         flex-direction: column;
@@ -161,24 +161,17 @@ pre {
     .navbar {
         font-size: 20px;
     }
+    
 }
 
-@media screen and (max-width: 1018px) and (min-width: 800px) {
+@media screen and (max-width: 1005px), screen and (max-device-width: 1005px) {
     #content {
-        top: 145px;
+        margin-top: 30px;
     }
 }
 
-@media screen and (max-device-width: 400px), screen and (max-width: 400px) {
-    .navbar {
-        font-size: 25px;
-    }
-
-    h1 {
-        font-size: 40px;    
-    }
-
-    pre {
-        font-size: 25px;
+@media screen and (max-width: 725px), screen and (max-device-width: 725px) {
+    #content {
+        margin-top: 50px;
     }
 }
