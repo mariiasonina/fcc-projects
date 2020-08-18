@@ -145,15 +145,14 @@ button:hover {
     background-color: #e64747;
 }
 
-.logo {
-    width: 70px;
-    height: auto;
+#github, #fcc, #mail, #phone {
+    font-size: 70px;
     transition: 0.3s linear;
 }
 
-.logo:hover {
-    padding-top: 7px;
-    margin-bottom: -7px;
+#github:hover, #fcc:hover, #mail:hover, #phone:hover {
+    padding-bottom: 7px;
+    margin-top: -7px;
 }
 
 #contacts {
