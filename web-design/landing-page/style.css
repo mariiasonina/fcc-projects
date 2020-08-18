@@ -131,8 +131,9 @@ h1 {
     flex-wrap: wrap;
 }
 
-.img-features {
-    width: 100px;
+#payment, #delivery, #quality {
+    font-size: 100px;
+    padding-top: 10px;
 }
 
 .features {
